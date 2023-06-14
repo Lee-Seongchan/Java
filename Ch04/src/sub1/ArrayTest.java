@@ -7,7 +7,13 @@ package sub1;
  * 
  * 배열은 같은 타입의 데이터로 이루어진 가장 기본적인 자료구조 
  * 배열을 구성하는 데이터를 원소(element)라고 하며, 각 원소의 번호를 인덱스라고 하며 0부터 시작한다.
- * 배열은 foreach문으로 반복 처리
+ * 배열은 for each문으로 반복 처리
+ * for each문(향상된 for문)
+ * for( 타입 변수 : 배열 ){
+ *   실행문
+ * }
+ * 
+
  * 
  */
 public class ArrayTest {
@@ -36,6 +42,7 @@ public class ArrayTest {
 		
 		System.out.println(); //개행 
 		
+		//for each문
 		for(char c : arr2) {
 			System.out.print(c + " ");
 		}
