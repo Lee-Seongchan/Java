@@ -28,6 +28,7 @@ public class Test02 {
 		
 		int age = year - birth;
 		System.out.printf("%s님 안녕하세요.\n당신은 올해 만 %d 입니다.", name, age);
+		// %s 문자열 %d 정수를 형태를 출력
 		
 		sc.close();
 	}

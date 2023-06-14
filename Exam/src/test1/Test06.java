@@ -21,6 +21,7 @@ public class Test06 {
 		int y = sc.nextInt();
 		
 		String result = x > y ? "x가 더 큽니다." : "y가 더 큽니다.";
+		//삼항 연산자의 데이터 타입은 결과값에 맞춘다.
 		System.out.println(result);
 	}
 }
