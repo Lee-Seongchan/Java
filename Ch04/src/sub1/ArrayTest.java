@@ -13,7 +13,6 @@ package sub1;
  *   실행문
  * }
  * 
-
  * 
  */
 public class ArrayTest {
