@@ -41,8 +41,7 @@ public class EncapsuleTest {
 		kb.withdraw(25000);
 		kb.show();
 		
-		System.out.println(avante);
-		System.out.println(sonata);
+		
 	}
 
 }
