@@ -76,6 +76,7 @@ public class AdderTest {
 		a1.add(arr);
 		a1.show();
 		
+		System.out.println("여기서부터 봐");
 		Adder.add(a1);
 		a1.show();
 		

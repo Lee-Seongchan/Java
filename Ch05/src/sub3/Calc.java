@@ -3,8 +3,9 @@ package sub3;
 public class Calc {
 	
 	//싱글톤 객체------
-	// static으로 자기 자신을 정의 하고 
+	// static으로 자기 자신을 정의
 	// getter
+	// return
 	private static Calc instance = new Calc();
 	
 	public static Calc getInstance() {
