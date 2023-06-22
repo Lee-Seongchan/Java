@@ -77,6 +77,7 @@ public class InheritTest {
 		kb.sell(5, 62000);
 		kb.show();
 		
+		
 	}
 
 }
