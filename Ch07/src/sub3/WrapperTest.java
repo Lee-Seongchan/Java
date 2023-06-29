@@ -21,7 +21,7 @@ public class WrapperTest {
 		
 		
 		// Wrapper 포장(Boxing) 
-		// Integer box1 = new Integer(var1); -> 권장 되진 않음
+		// Integer box1 = new Integer(vjar1); -> 권장 되진 않음
 		Integer box1 = var1; // -> wrapping을 하는 이유는 제네릭 컬렉션에서 다루는 데이터가 객체만 취급하기 때문에
 		Double  box2 = var2;
 		Boolean box3 = var3;
