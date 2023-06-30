@@ -21,10 +21,7 @@ public class FileIOTest {
 	public static void main(String[] args) {
 		
 		String path = "C:\\Users\\Java\\Desktop\\Sample1.txt";
-		String target = "C:\\Users\\Java\\Desktop\\Sample2.txt";
-		
-		
-		
+		String target = "C:\\Users\\Java\\Desktop\\Sample2.txt";	
 		
 		try {
 			// 스트림 생성(연결)
