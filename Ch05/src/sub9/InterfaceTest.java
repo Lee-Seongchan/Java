@@ -59,7 +59,7 @@ public class InterfaceTest {
 		System.out.println("------------------------------------------");
 		
 		// 인터페이스 활용2 - 유연성(결합도 완하)
-		Bulb bulb = new Bulb();
+		Bulb bulb  = new Bulb();
 		Socket socket = new Cable(bulb);
 		
 		socket.switchOn();

@@ -19,7 +19,7 @@ public class PolyTest {
 		// 다형성을 적용한 객체 생성(업캐스팅)
 		// a1은 animal을 참조하여 hunt만을 호출 가능하다 그러나 animal은 tiger을 상속하기 때문에 
 		// hunt를 출력하지 못하지만 오버라이드를 위한 메서드를 쓴다면 유연하게 호출 가능하다.
-		Animal a1 = new Tiger();
+		Animal a1 = new Tiger(); 
 		Animal a2 = new Eagle();
 		Animal a3 = new Shark();
 		
@@ -34,7 +34,7 @@ public class PolyTest {
 		a3.hunt();
 		
 		// 다운 캐스팅 
-		Tiger tiger = (Tiger)a1;
+		Tiger tiger = (Tiger)a1;	
 		Eagle eagle = (Eagle)a2;
 		Shark shark = (Shark)a3;
 		

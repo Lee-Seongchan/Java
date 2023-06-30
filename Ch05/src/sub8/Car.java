@@ -13,7 +13,7 @@ public abstract class Car {
 		this.speed = speed;
 	}
 	
-	
+	// 미완성 메서드
 	public abstract void speedUp(int speed);
 	
 	public abstract void speedDown(int speed); 

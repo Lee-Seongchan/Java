@@ -25,6 +25,7 @@ class Vehicle{
 	
 }	
 class CarFactory{
+	
 	private static CarFactory instance = new CarFactory();
 	
 	private CarFactory() {

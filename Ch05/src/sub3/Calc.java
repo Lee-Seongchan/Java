@@ -4,8 +4,8 @@ public class Calc {
 	
 	//싱글톤 객체------
 	// static으로 자기 자신을 정의
-	// getter
-	// return
+	// getter 외부에서 호출하기 위한 메서드 
+	// return 외부에서 넣은 값을 리턴하기 위한 메서드
 	private static Calc instance = new Calc();
 	
 	public static Calc getInstance() {
