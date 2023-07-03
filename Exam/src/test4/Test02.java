@@ -1,6 +1,5 @@
 package test4;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 class NotFoundException extends Exception{
