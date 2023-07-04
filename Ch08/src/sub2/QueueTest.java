@@ -28,6 +28,16 @@ public class QueueTest {
 		while(!queue.isEmpty()) {
 			System.out.println(queue.poll());
 		}
+		
+		LinkedList<Integer> num = new LinkedList<>();
+		num.add(1);
+		num.add(2);
+		num.add(3);
+		num.add(4);
+		num.add(5);
+		num.add(6);
+		System.out.println("----------------");
+		System.out.println(num.get(3));
 	}
 
 }
