@@ -30,7 +30,7 @@ public class MapStreamTest {
 		// map
 		people
 		.stream()
-		.map((person) -> person.getName())
+		.map(person -> person.getName())
 		.forEach(name -> System.out.print(name + ", "));
 		System.out.println();
 		
@@ -40,7 +40,7 @@ public class MapStreamTest {
 		//flatMap
 		list
 			.stream()
-			.flatMap(str -> Arrays.stream(str.split(",")))
+			.flatMap(str -> {return Arrays.stream(str.split(","));})
 			.forEach(num -> System.out.print(num + ", "));
 		System.out.println();
 		
@@ -48,11 +48,11 @@ public class MapStreamTest {
 		// flatMapToInt
 		int result = list
 			.stream()
-			.flatMapToInt((str) -> {
-				String[] strArr= str.split(",");
-				
-				int[] nums = new int[strArr.length];
-				
+			.flatMapToInt((String str) -> {
+				String[] strArr = str.split(","); //-> "1", "2", "3", "4", "5", "6", "7", "8", "9"
+				//배열 생성
+				int[] nums = new int[strArr.length]; 
+				//반복문을 통해 배열 출력 및 문자열로 된 배열 정수화 하여 nums 배열에 값 입력
 				for(int i =0; i < strArr.length; i++) {
 					nums[i] = Integer.parseInt(strArr[i]);
 				}

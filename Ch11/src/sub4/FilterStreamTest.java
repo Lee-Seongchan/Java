@@ -18,8 +18,7 @@ public class FilterStreamTest {
 		System.out.println(numbers);
 		
 		// 중복제거 
-		numbers.stream().distinct().forEach(num -> System.out.print(num + ", "));
-		
+		numbers.stream().distinct().forEach((Integer num) -> {System.out.print(num + ", ");});		
 		// 5이상 데이터 필터링
 		numbers
 		.stream()

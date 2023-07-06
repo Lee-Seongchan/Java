@@ -51,7 +51,7 @@ public class CollectionStreamTest {
 	
 		// 내부 반복자를 이용한 출력
 		Stream<Person> stream2 = people.stream();
-		stream2.forEach(person -> {
+		stream2.forEach((Person person) -> {
 			System.out.println("이름 : " + person.getName() + ", 나이 : " + person.getAge());
 			});
 		

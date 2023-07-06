@@ -40,7 +40,7 @@ public class LambdaTest {
 		
 		// 타입을 없애버림(생략)
 		A a2 = (a, b) -> {return a + b;};
-		// 괄호 생략하고 return 타입을 없애 버림
+		// 괄호 생략하여 타입생략, return 타입과 중괄호 생략
 		A a3 = (a, b) -> a + b;
 		
 		int r1 = a1.method(1, 2);

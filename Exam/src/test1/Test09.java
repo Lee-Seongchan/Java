@@ -24,6 +24,7 @@ public class Test09 {
 			}
 			System.out.print("\n");
 		}
+		
 	}
 
 }

@@ -1,4 +1,4 @@
-package sub5;
+package collection;
 
 public class Member {
 
