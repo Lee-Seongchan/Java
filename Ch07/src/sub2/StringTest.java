@@ -45,7 +45,7 @@ public class StringTest {
 		char c1 = msg.charAt(0);
 		char c2 = msg.charAt(6);
 		
-		
+	
 		System.out.println("msg1 1번째 문자 : " + msg.charAt(0));
 		System.out.println("msg1 7번째 문자 : " + msg.charAt(6));
 		
