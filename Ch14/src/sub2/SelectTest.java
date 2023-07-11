@@ -20,7 +20,7 @@ public class SelectTest {
 			
 			//2단계 - 데이터 베이스 접속
 			Connection conn	= DriverManager.getConnection(host, user, pass);
-			//3단계 - SQL 실행 객체 생성
+			//3단계 - SQL 실행 객체(Statement) 생성
 			Statement stmt = conn.createStatement();
 			//4단계 - SQL 실행
 			String sql = "SELECT * FROM `user1`;";
