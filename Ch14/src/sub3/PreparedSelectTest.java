@@ -7,6 +7,24 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * 날짜 : 2023/07/11
+ * 이름 : 이성찬
+ * 내용 : PreparedStatement 실습하기
+ * 
+ * PreparedStatement
+ * - 기존 Statement 보다 향상된 동적 SQL 생성을 위한 Statement
+ * - Query Parameter에 값을 Mapping 시켜 쿼리 실행
+ * 
+ * VO객체
+ * - 도메인 값을 속성으로 갖는 객체
+ * - 테이블 개체(Entity)를 객체로 변환할 때 사용하는 객체
+ * - DTO 와 구분
+ */
+
+
+
+
 // VO(Value Object) 객체 : 테이블 개체(Entity)가 변환되는 객체
 class User2VO {
 	private String uid;
@@ -79,7 +97,10 @@ public class PreparedSelectTest {
 				//VO객체 생성 및 초기화
 				User2VO vo = new User2VO();
 				
-				vo.setUid(rs.getString(1)); 
+				vo.setUid(rs.getString(1));
+//				String uid = rs.getString(1);
+//				vo.setUid(uid);
+				
 				vo.setName(rs.getString(2)); 
 				vo.setHp(rs.getString(3)); 
 				vo.setAge(rs.getInt(4)); 

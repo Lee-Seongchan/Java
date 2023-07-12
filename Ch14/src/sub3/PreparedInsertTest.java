@@ -9,7 +9,6 @@ import java.sql.PreparedStatement;
  * 이름 : 이성찬
  * 내용 : PreparedStatement 실습하기
  * 
- * 
  */
 public class PreparedInsertTest {
 
