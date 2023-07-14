@@ -38,7 +38,7 @@ public class CRUDTest {
 				break;
 				
 			}else if(answer == 1) {
-				
+				// 입력
 				UserVO vo = new UserVO();
 				
 				

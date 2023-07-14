@@ -16,7 +16,7 @@ public class UserDAO {
 		
 	}
 	
-	public void insertUser() {
+	public void insertUser(UserVO vo) {
 		String host = "jdbc:mysql://127.0.0.1:3306/userdb";
 		String user = "root";
 		String pass = "1234";
@@ -25,12 +25,13 @@ public class UserDAO {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection conn	= DriverManager.getConnection(host, user, pass);
 		
-		String sql = "?";
-		PreparedStatement psmt = conn.prepareStatement(sql);
-		psmt.setString(1, );
-		psmt.setString(2, );
-		psmt.setString(3, );
-		psmt.setString(4, );
+
+		PreparedStatement psmt = conn.prepareStatement(SQL.INSERT_USER);
+		
+		psmt.setString(1, vo.getUid());
+		psmt.setString(2, vo.getName());
+		psmt.setString(3, vo.getHp());
+		psmt.setInt(4, vo.getAge());
 		
 		psmt.executeUpdate();
 		
@@ -39,6 +40,7 @@ public class UserDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println("Insert 완료");
 	}
 	
 

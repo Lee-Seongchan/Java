@@ -4,7 +4,7 @@ public class UserVO {
 	String uid;
 	String name;
 	String hp;
-	String age;
+	int age;
 	
 	public String getUid() {
 		return uid;
@@ -24,10 +24,10 @@ public class UserVO {
 	public void setHp(String hp) {
 		this.hp = hp;
 	}
-	public String getAge() {
+	public int getAge() {
 		return age;
 	}
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 }
