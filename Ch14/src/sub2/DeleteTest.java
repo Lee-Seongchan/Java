@@ -24,7 +24,7 @@ public class DeleteTest {
 			//4단계 - SQL 실행
 			String sql = "DELETE FROM `user1` WHERE `uid` = 'j101';";
 			stmt.executeUpdate(sql);
-			
+	
 			//5단계 - 결과 처리(Select 경우)
 			//6단계 -
 			stmt.close();
